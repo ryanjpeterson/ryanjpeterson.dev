@@ -3,7 +3,7 @@ const navbarContents = document.getElementById("navbar-contents");
 const navbarItem = document.querySelectorAll(".navbar-item");
 
 let navbarCollapsed = false;
-let userCollapsedNavbar = true;
+let userCollapsedNavbar = false;
 
 function toggleNavbar() {
   if (navbarContents.classList.contains("navbar-contents-collapse")) {
