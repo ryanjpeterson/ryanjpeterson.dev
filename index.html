@@ -5,19 +5,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="http://www.google.com/s2/u/0/favicons?domain=css-tricks.com"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-brand">
+        <a href="#home" class="navbar-link">ryanjpeterson.dev</a>
+        <div id="navbar-toggle">Show Menu</div>
+      </div>
+
+      <div
+        class="navbar-contents navbar-contents-collapse"
+        id="navbar-contents"
+      >
+        <div class="navbar-item">
+          <a href="#projects" class="navbar-link">Projects</a>
+        </div>
+        <div class="navbar-item">
+          <a href="#about" class="navbar-link">About</a>
+        </div>
+        <div class="navbar-item">
+          <a href="#contact" class="navbar-link">Contact</a>
+        </div>
+        <div class="navbar-item">
+          <a
+            href="https://github.com/ryanjpeterson"
+            class="navbar-link"
+            target="_blank"
+            >Github</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section: Header -->
+    <section class="section" class="header" id="header">
+      <img
+        src="https://scontent.fybz2-1.fna.fbcdn.net/v/t1.0-9/73243923_10156639172954327_7552163192118444032_o.jpg?_nc_cat=107&_nc_sid=09cbfe&_nc_ohc=SSmAQhjPIzUAX-a18br&_nc_ht=scontent.fybz2-1.fna&oh=f7a147cc1ccdf7b2e88ede2f522a9317&oe=5F69A726"
+        alt="Me"
+        data-aos="flip-down"
+        class="header-img"
+      />
+      <h1 class="section-title header-title" data-aos="fade-up">
+        Hey, My Name Is Ryan
+      </h1>
+      <p>
+        I'm a marketing manager turned web developer. I work on solving problems
+        with code.
+      </p>
+    </section>
+
+    <!-- Section: Projects -->
+    <section class="solid-bg" id="projects">
+      <div class="section-container">
+        <h2 id="section-title">
+          Let's get right to it...
+        </h2>
+        <p>Here's the projects I've worked on:</p>
+        <div class="projects-container">
+          <div class="project" data-aos="fade-right">1</div>
+          <div class="project" data-aos="fade-down">2</div>
+          <div class="project" data-aos="fade-up">3</div>
+          <div class="project" data-aos="fade-left">4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: About -->
+    <section id="about">
+      <div class="section-container about" data-aos="fade-right">
+        <h2 id="section-title">But, who am I?</h2>
+        <p>
+          Hey, I'm Ryan Peterson, originally from
+          <span class="bold">Tottenham, ON</span>. and I've been a marketing
+          manager at <span class="bold">Marcone Supply</span> since
+          <span class="bold">2015</span>. They're North America's largest
+          appliance parts distributor, with Canadian headquarters in
+          <span class="bold">Vaughan, ON</span>. I recently relocated to
+          <span class="bold">Ottawa, ON</span> - quite the commute!
+          <span class="italic">(occasionally)</span>
+        </p>
+        <p>
+          Day to day, I'm responsible for all of Marcone's Canadian promotions -
+          email marketing campaigns, sales promotions and until recently -
+          planning an execution of Marcone Servicers Association training events
+          - an all day, cross Canada product training events for appliance
+          service technicians. Together with my team, I was responsible bringing
+          in approximately 500 people/year into about 30 training events in
+          major cities across Canada.
+        </p>
+        <p>
+          After being tasked with content curation and creation for
+          <a class="bold" href="http://www.msaworld.com/">MSAWorld.com</a>, I
+          was bit by the web development bug, and now I'm working my way to
+          making it the thing I do during weekdays
+          <span class="italic">(in exchange for money!)</span>
+        </p>
+        <p>
+          Web development is a collision of everything that interests me about
+          design, programming and the internet. I'm looking for a spot on a team
+          that will let take what I know and apply it to business problems, as
+          well as soak up all the knowledge of those around me.
+        </p>
+      </div>
+
+      <div class="recommendation solid-bg" data-aos="fade-left">
+        <h3>Oh, also - looking for a good album?</h3>
+        <span class="italic">Check this out...</span>
+        <div
+          class="recommendation-container recommendation-fade-in"
+          data-aos="flip-right"
+        >
+          <div class="recommentation-item">
+            <img
+              class="recommendation-img"
+              src="img/no-cover.png"
+              alt="cover"
+              id="recommendation-cover"
+            />
+          </div>
+          <div class="recommendation-item">
+            <div class="recommendation-text">
+              <h3 id="recommendation-artist"></h3>
+              <h4 id="recommendation-album"></h4>
+              <div class="recommendation-links">
+                <a
+                  class="recommendation-link"
+                  id="recommendation-spotify"
+                  href=""
+                  target="_blank"
+                >
+                  <i class="fab fa-spotify page-link"></i>
+                </a>
+                <a
+                  class="recommendation-link"
+                  id="recommendation-apple"
+                  href=""
+                  target="_blank"
+                >
+                  <i class="fab fa-apple page-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommendation-btn btn" id="recommendation-btn">
+          <span>Nope, next!</span>
+          <i class="fas fa-fast-forward"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section class="solid-bg" id="contact">
+      <div class="section-container contact" data-aos="fade-right">
+        <h2 id="section-title">Get in touch with me!</h2>
+        <p>
+          Send me an email and let's discuss what role I can play on your team.
+          Or, check me out on one of these platforms:
+        </p>
+        <div class="contact-links">
+          <a
+            class="page-link"
+            href="https://www.facebook.com/ryan336/"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a
+            class="page-link"
+            href="https://www.linkedin.com/in/ryan-peterson-27108896/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            class="page-link"
+            href="https://github.com/ryanjpeterson"
+            target="_blank"
+          >
+            <i class="fab fa-github-square"></i>
+          </a>
+        </div>
+        <p class="bold">e: ryanjay333@gmail.com</p>
+      </div>
+    </section>
+    <!-- AOS.js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/recommendation.js"></script>
   </body>
 </html>
