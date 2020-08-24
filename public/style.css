@@ -145,7 +145,7 @@ a {
   align-items: center;
 
   background: var(--accent-dark-1);
-  min-height: 250px;
+  min-height: 400px;
 
   box-shadow: var(--box-shadow);
   border-radius: var(--box-rounded-corners);

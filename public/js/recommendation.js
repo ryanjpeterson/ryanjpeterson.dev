@@ -21,9 +21,9 @@ async function callFirebase() {
       });
     });
 
-  loadAlbum();
   initPosition = Math.floor(Math.random() * albums.length);
   currentPosition = initPosition;
+  loadAlbum();
 }
 
 function loadAlbum() {
