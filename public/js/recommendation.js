@@ -5,7 +5,6 @@ const spotifyLink = document.getElementById("recommendation-spotify");
 const appleLink = document.getElementById("recommendation-apple");
 const recommendationBtn = document.getElementById("recommendation-btn");
 
-const db = firebase.firestore();
 const albums = [];
 
 let initPosition = 0;

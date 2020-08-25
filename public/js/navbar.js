@@ -1,6 +1,5 @@
 const navbarToggle = document.getElementById("navbar-toggle");
 const navbarContents = document.getElementById("navbar-contents");
-const navbarItem = document.querySelectorAll(".navbar-item");
 
 let navbarCollapse = true;
 

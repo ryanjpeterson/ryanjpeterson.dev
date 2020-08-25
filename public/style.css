@@ -389,7 +389,6 @@ h4 {
   .recommendation-container {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 1rem;
   }
 
   .recommendation-img {
