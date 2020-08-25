@@ -33,6 +33,8 @@ body {
   min-height: 100vh;
   max-width: 100vw;
   position: relative;
+
+  overflow-x: hidden;
 }
 
 section {
@@ -43,7 +45,6 @@ section {
 
   min-height: 100vh;
   text-align: center;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -127,28 +128,62 @@ a {
 }
 
 .section-container {
-  width: 90vw;
-  padding: 1rem;
+  width: 95vw;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
 }
 
 /*  Section: Project */
 .projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
+  width: 100%;
 }
 
 .project {
+  background: var(--accent-dark-1);
+  height: 300px;
+  width: 100%;
+
+  position: relative;
+}
+
+.project-link {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-info {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  box-sizing: border-box;
+}
 
-  background: var(--accent-dark-1);
-  min-height: 400px;
+.project-tools {
+  width: 100%;
+  margin-top: 1rem;
+}
 
-  box-shadow: var(--box-shadow);
-  border-radius: var(--box-rounded-corners);
+.project-tools i {
+  margin: 0 1rem;
+  font-size: 2rem;
 }
 
 /* Section: About */
@@ -347,12 +382,6 @@ h4 {
     width: 50%;
   }
 
-  .projects-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
-
   .recommendation {
     width: 80vw;
   }
@@ -370,14 +399,5 @@ h4 {
 
   .recommendation-text {
     padding: 1rem;
-  }
-}
-
-/* Screens above 1200px */
-@media screen and (min-width: 1200px) {
-  .projects-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
   }
 }
