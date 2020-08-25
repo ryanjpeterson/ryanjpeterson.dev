@@ -145,8 +145,8 @@ a {
   background: var(--accent-dark-1);
   height: 300px;
   width: 100%;
-
   position: relative;
+  border-radius: var(--box-rounded-corners);
 }
 
 .project-link {
@@ -159,6 +159,7 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: var(--box-rounded-corners);
 }
 
 .project-info {
@@ -174,6 +175,7 @@ a {
   background: rgba(0, 0, 0, 0.75);
   padding: 1rem;
   box-sizing: border-box;
+  border-radius: var(--box-rounded-corners);
 }
 
 .project-tools {
