@@ -136,7 +136,8 @@ a {
 /*  Section: Project */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   grid-gap: 1rem;
   width: 100%;
 }
@@ -146,6 +147,8 @@ a {
   height: 300px;
   width: 100%;
   position: relative;
+  grid-column: span 6;
+  grid-row: span 6;
   border-radius: var(--box-rounded-corners);
 }
 
@@ -176,6 +179,10 @@ a {
   padding: 1rem;
   box-sizing: border-box;
   border-radius: var(--box-rounded-corners);
+}
+
+.project-mention {
+  margin: 0;
 }
 
 .project-tools {
@@ -382,6 +389,11 @@ h4 {
 
   .header-img {
     width: 50%;
+  }
+
+  .project {
+    grid-column: span 12;
+    grid-row: span 6;
   }
 
   .recommendation {
