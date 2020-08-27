@@ -129,6 +129,11 @@ a {
   box-sizing: border-box;
 }
 
+.header-location i {
+  color: #ea5455;
+  margin-right: 5px;
+}
+
 /* Section base styling */
 .solid-bg {
   color: var(--text-light-color);
