@@ -119,6 +119,7 @@ a {
   border-radius: 50%;
   width: 25%;
   max-width: 250px;
+  margin-top: 4rem;
   box-shadow: var(--box-shadow);
 }
 
