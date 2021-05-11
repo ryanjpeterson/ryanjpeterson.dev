@@ -10,7 +10,7 @@
   --border-sm: 2.5px;
   --border-lg: 5px;
 
-  --colour-bg: #f9f3f3;
+  --colour-bg: #eee;
 
   --colour-text: #181818;
   --colour-text-hover: #18181895;
@@ -29,6 +29,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--colour-bg);
+  overflow-x: hidden;
 }
 
 body {

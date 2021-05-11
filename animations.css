@@ -11,7 +11,7 @@
 @keyframes fadeFromTop {
   from {
     opacity: 0;
-    transform: translateY(-25px);
+    transform: translateY(-100px);
   }
   to {
     opacity: 1;
@@ -22,7 +22,7 @@
 @keyframes fadeFromLeft {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-100px);
   }
   to {
     opacity: 1;
@@ -33,7 +33,7 @@
 @keyframes fadeFromRight {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(100px);
   }
   to {
     opacity: 1;
