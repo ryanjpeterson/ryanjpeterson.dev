@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,800;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+:root {
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  --border-sm: 2.5px;
+  --border-lg: 5px;
+
+  --colour-bg: #f9f3f3;
+
+  --colour-text: #181818;
+  --colour-text-hover: #18181895;
+  --colour-text-transparent: #18181820;
+
+  --colour-accent: #079299;
+  --colour-accent-hover: #07929995;
+  --colour-accent-transparent: #07929950;
+
+  /* teal: 079299 */
+  /* blue: 3d84b8 */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--colour-bg);
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--colour-text);
+}
+
+section {
+  padding: var(--space-sm) var(--space-lg);
+  box-sizing: border-box;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+.fw-med {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 800;
+}
+
+.underline {
+  border-bottom: var(--border-lg) solid var(--colour-accent-transparent);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.role {
+  color: var(--colour-accent);
+}
+
+.font-code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.fas,
+.fab {
+  color: var(--colour-accent);
+}
+
+.fa-github {
+  color: var(--colour-text);
+  font-size: var(--space-md);
+  text-decoration: none;
+}
+
+.fa-github:hover {
+  color: var(--colour-text-hover);
+  font-size: var(--space-md);
+  text-decoration: none;
+}
