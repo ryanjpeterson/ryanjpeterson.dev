@@ -45,7 +45,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2><span class="underline">About Me</span></h2>
 
       <p class="fw-bold">
@@ -61,16 +61,26 @@
       </p>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2><span class="underline">Projects</span></h2>
 
-      <div class="projects__container" id="projects__container"></div>
+      <div class="grid-container" id="projects-grid"></div>
+    </section>
+
+    <section class="recommendations" id="recommendations">
+      <h2><span class="underline">Recommendations</span></h2>
+      <p>
+        I'm a little obsessed with music. Since you've stuck around, here are
+        some albums you might like:
+      </p>
+
+      <div class="grid-container" id="recommendations-grid"></div>
     </section>
 
     <footer>&copy; <span id="currentYear"></span></footer>
   </body>
 
-  <script src="js/projects.js"></script>
+  <script src="js/renderContent.js"></script>
 
   <!-- Get current year -->
   <script>
