@@ -27,6 +27,13 @@ const projects = [
     img: 'img/you-vs-the-wrld-preview.png',
     projectURL: 'https://you-vs-the-wrld.web.app/',
   },
+  {
+    name: 'Twitter Fav Bot',
+    description: 'CLI Python Twitter fav bot',
+    githubURL: 'https://github.com/ryanjpeterson/miscellaneous-billy-corgan',
+    img: 'img/twitter-fav-bot-preview.jpg',
+    projectURL: 'https://github.com/ryanjpeterson/miscellaneous-billy-corgan',
+  },
 ];
 
 const generateProjectItem = (project) => `
