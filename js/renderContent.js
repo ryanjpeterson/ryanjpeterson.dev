@@ -31,7 +31,7 @@ const projects = [
     name: 'Twitter Fav Bot',
     description: 'CLI Python Twitter fav bot',
     githubURL: 'https://github.com/ryanjpeterson/miscellaneous-billy-corgan',
-    img: 'img/twitter-fav-bot-preview.jpg',
+    img: 'img/twitter-fav-bot-preview.png',
     projectURL: 'https://github.com/ryanjpeterson/miscellaneous-billy-corgan',
   },
 ];
@@ -59,15 +59,14 @@ const generateProjectItem = (project) => `
 // Recommendations
 const recommendations = [
   {
-    artist: 'Juan Atkins & Moritz von Oswald',
-    album: 'Transport',
+    artist: 'Burial',
+    album: 'Untrue',
     spotifyURL:
-      'https://open.spotify.com/album/0SvoaQ0WhkPJNGjXQT7zOk?si=zWyGMPogTrOz-TzkiGPDcQ',
-    appleMusicURL:
-      'https://music.apple.com/us/album/juan-atkins-moritz-von-oswald-present-borderland-transport/1284347027',
+      'https://open.spotify.com/album/1CI5OW60s9W41YLI80Jjdr?si=KeG5FvJEQZC07tY_3tSmjQ',
+    appleMusicURL: 'https://music.apple.com/us/album/untrue/893175779',
     coverURL:
-      'https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/4c/5f/38/4c5f3808-7870-c529-5430-9fb34f45201d/0666017302928_cover.jpg/1200x1200bf-60.jpg',
-    description: 'Mysterious and mechanical techno',
+      'https://is4-ssl.mzstatic.com/image/thumb/Music4/v4/1f/52/07/1f520784-db49-c435-b681-0e4e28e5000b/5024545486520.jpg/1200x1200bf-60.jpg',
+    description: 'Dark and moody electronic',
   },
   {
     artist: 'Slowdive',
