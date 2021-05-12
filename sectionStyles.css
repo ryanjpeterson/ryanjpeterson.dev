@@ -29,7 +29,6 @@
   border-radius: 50%;
   margin: 0 var(--space-lg);
   animation: fadeFromLeft 0.75s ease-in-out;
-  width: 100%;
 }
 
 .header__info {
@@ -108,6 +107,28 @@
   width: 100%;
 }
 
+/* Experience */
+.experience__pdf-link {
+  display: flex;
+  margin: var(--space-sm) 0;
+  background: var(--colour-accent);
+  color: var(--colour-bg);
+  width: 250px;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-xs) var(--space-sm);
+  box-sizing: border-box;
+  border-radius: var(--border-lg);
+}
+
+.experience__pdf-link:hover {
+  transform: translateY(-2px);
+}
+
+.experience__item {
+  margin-bottom: var(--space-md);
+}
+
 footer {
   background: var(--colour-accent);
   color: var(--colour-bg);
@@ -128,14 +149,10 @@ footer {
 
 @media only screen and (max-width: 970px) {
   section {
-    padding: var(--space-sm);
+    padding: var(--space-md);
   }
 
   .intro__img {
     margin: var(--space-md) 0;
-  }
-
-  footer {
-    margin-top: var(--space-md);
   }
 }
