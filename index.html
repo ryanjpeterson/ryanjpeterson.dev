@@ -152,10 +152,10 @@
 
     // Scroll into about me after load
     const about = document.querySelector('#about');
-    const scroll = () => about.scrollIntoView({ behavior: 'smooth' });
+    const scrollToAbout = () => about.scrollIntoView({ behavior: 'smooth' });
 
-    setInterval(() => {
-      scroll();
+    setTimeout(() => {
+      if (window.pageYOffset == 0) scrollToAbout();
     }, 5000);
   </script>
 </html>
