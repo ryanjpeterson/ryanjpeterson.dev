@@ -92,7 +92,6 @@ a {
 .fa-apple {
   color: var(--colour-text);
   font-size: var(--space-md);
-  margin: var(--space-xs) var(--space-xs) 0 0;
 }
 
 .fa-github:hover,

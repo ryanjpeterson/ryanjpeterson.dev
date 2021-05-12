@@ -111,6 +111,10 @@ nav {
   border-radius: var(--border-lg);
 }
 
+.grid-item__info-container {
+  margin-bottom: var(--space-xs);
+}
+
 .grid-item__info {
   display: flex;
   flex-flow: column wrap;
@@ -135,6 +139,8 @@ nav {
 }
 
 .grid-item__streaming-links {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
 }
 

@@ -44,7 +44,7 @@ const generateProjectItem = (project) => `
         </div>
     </a>
     <div class="grid-item__info">
-    <div>
+    <div class="grid-item__info-container">
         <h3>${project.name}</h3>
         <span class="italic">${project.description}</span>
     </div>
@@ -109,7 +109,7 @@ const recommendations = [
     appleMusicURL:
       'https://music.apple.com/us/album/hidden-history-of-the-human-race/1480891003',
     coverURL: 'https://f4.bcbits.com/img/a0485761639_10.jpg',
-    description: 'Celestial and crushing death metal',
+    description: 'Celestial death metal',
   },
 ];
 
@@ -121,7 +121,7 @@ const generateRecommendationItem = (recommendation) =>
     </div>
 
     <div class="grid-item__info">
-      <div>
+      <div class="grid-item__info-container">
         <h3>${recommendation.artist}</h3>
         <span class="italic">${recommendation.album}</span>
       </div>
