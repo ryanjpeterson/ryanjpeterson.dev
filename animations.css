@@ -41,6 +41,15 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hover-link:hover {
   /* transform: translateY(-1px);*/
   transform: scale(1.025);
