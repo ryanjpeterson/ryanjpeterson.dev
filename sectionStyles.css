@@ -1,3 +1,28 @@
+/* Nav section */
+nav {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: var(--space-xs) 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.nav__item {
+  margin: 0 var(--space-sm);
+}
+
+.nav__item:hover {
+  transform: translateY(-2px);
+}
+
 /* Header section */
 .header {
   display: flex;
@@ -6,6 +31,8 @@
 
   height: 100vh;
   min-height: 500px;
+
+  position: relative;
 }
 
 .header h1 {
@@ -45,8 +72,12 @@
   margin-top: var(--space-sm);
 }
 
-.header__code-accent {
+.code-accent {
   color: var(--colour-accent);
+}
+
+.indent {
+  margin-left: var(--space-sm);
 }
 
 /* Projects section */

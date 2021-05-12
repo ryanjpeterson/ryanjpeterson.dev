@@ -15,6 +15,21 @@
   </head>
   <body>
     <section class="header" id="header">
+      <nav>
+        <a
+          class="nav__item"
+          target="_blank"
+          href="https://github.com/ryanjpeterson"
+          >GitHub</a
+        >
+        <a
+          class="nav__item"
+          target="_blank"
+          href="https://drive.google.com/file/d/1X3i_M-eDn0RRuU4KczMj13uZswMuwuz0/view?usp=sharing"
+          >Resume</a
+        >
+      </nav>
+
       <div class="header__content">
         <div class="header__img-container">
           <img
@@ -38,7 +53,7 @@
 
             <p class="font-code">
               const email =
-              <span class="header__code-accent">'ryanjay333@gmail.com'</span>;
+              <span class="code-accent">'ryanjay333@gmail.com'</span>;
             </p>
           </div>
         </div>
@@ -66,10 +81,20 @@
         interested in learning how to use new tools and languages to improve my
         work.
       </p>
-      <p>
-        <span class="fw-bold">Like my projects?</span> Get in touch with me and
-        let's discuss opportunities.
-      </p>
+
+      <div class="font-code">
+        <p>
+          if (impressedByProjects) {
+          <br /><span class="indent"
+            >willEmail = <span class="code-accent">true</span>;</span
+          >
+          <br /><span class="indent"
+            >return
+            <span class="code-accent">'Get in touch with me'</span>;</span
+          >
+          <br />}
+        </p>
+      </div>
     </section>
 
     <section class="projects" id="projects">
