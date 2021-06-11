@@ -101,16 +101,6 @@ const recommendations = [
       'https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/26/6f/0a/266f0a05-ab16-2a07-f3df-21bd6cad19ff/dj.hbriokga.jpg/1200x1200bf-60.jpg',
     description: 'Soulful and vibrant jazz fusion',
   },
-  {
-    artist: 'Blood Incantation',
-    album: 'Hidden History of the Universe',
-    spotifyURL:
-      'https://open.spotify.com/album/34U0n1oAE5mwgdaIBrcIck?si=66rwGF7NSnKOX7s1Z_BZlQ',
-    appleMusicURL:
-      'https://music.apple.com/us/album/hidden-history-of-the-human-race/1480891003',
-    coverURL: 'https://f4.bcbits.com/img/a0485761639_10.jpg',
-    description: 'Celestial death metal',
-  },
 ];
 
 const generateRecommendationItem = (recommendation) =>
