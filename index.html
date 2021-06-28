@@ -204,13 +204,5 @@
     // Set year in footer
     const year = document.querySelector('#currentYear');
     year.textContent = new Date().getFullYear() + ' Ryan Peterson';
-
-    // Scroll into about me after load
-    const about = document.querySelector('#about');
-    const scrollToAbout = () => about.scrollIntoView({ behavior: 'smooth' });
-
-    setTimeout(() => {
-      if (window.pageYOffset == 0) scrollToAbout();
-    }, 5000);
   </script>
 </html>
