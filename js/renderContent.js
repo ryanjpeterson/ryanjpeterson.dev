@@ -1,5 +1,5 @@
 // DOM Elements
-const projectsContainer = document.querySelector('#projects-grid');
+const projectsContainer = document.querySelector('#projects-container');
 const recommendationsContainer = document.querySelector(
   '#recommendations-grid'
 );
@@ -38,21 +38,29 @@ const projects = [
 
 const generateProjectItem = (project) => `
 <div class="grid-item">
-    <a href="${project.projectURL}" target="_blank">
-        <div class="grid-item__img-container">
-            <img class="grid-item__img" src="./${project.img}" alt="${project.name}">  
-        </div>
+  <a
+    class="grid-item__img-container"
+    href="${project.projectURL}"
+    target="_blank"
+  >
+    <img class="grid-item__img" src="./${project.img}" alt="${project.name}" />
+  </a>
+
+  <div class="grid-item__info">
+    <a class="grid-item__header" href="${project.projectURL}" target="_blank">
+      <h3 class="grid-item__header">${project.name}</h3>
     </a>
-    <div class="grid-item__info">
-    <div class="grid-item__info-container">
-        <h3>${project.name}</h3>
-        <span class="italic">${project.description}</span>
+    <div class="grid-item__description italic">
+      ${project.description}
     </div>
 
-    <a href="${project.githubURL}" target="_blank">
-        <i class="fab fa-github" aria-hidden="true"></i>  
-    </a>
-    </div>
+  </div>
+
+  <a class="grid-item__github" href="${project.githubURL}" target="_blank">
+  <i class="fab fa-github" aria-hidden="true"></i>
+  <span>GitHub</span>
+</a>
+
 </div>
 `;
 
@@ -111,23 +119,23 @@ const generateRecommendationItem = (recommendation) =>
     </div>
 
     <div class="grid-item__info">
-      <div class="grid-item__info-container">
-        <h3>${recommendation.artist}</h3>
-        <span class="italic">${recommendation.album}</span>
+      <h3 class="grid-item__header">${recommendation.artist}</h3>
+      <div>${recommendation.album}</div>
+      <div class="grid-item__description italic">
+        ${recommendation.description}
       </div>
 
       <div class="grid-item__streaming-links">
         <a href="${recommendation.spotifyURL}" target="_blank">
-          <i class="fab fa-spotify" aria-hidden="true"></i>  
+          <i class="fab fa-spotify streaming-link__icon" aria-hidden="true"></i>  
         </a>
 
         <a href="${recommendation.appleMusicURL}" target="_blank">
-          <i class="fab fa-apple" aria-hidden="true"></i>  
+          <i class="fab fa-apple streaming-link__icon" aria-hidden="true"></i>  
         </a>
       </div>
+      </div>
     </div>
-
-    <p class="grid-item__recommendation">${recommendation.description}</p>
 </div>
 `;
 

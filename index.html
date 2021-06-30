@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-H2H5V1VEHH"
-    ></script>
+    ></script> -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -28,8 +28,13 @@
     ></script>
   </head>
   <body>
-    <section class="header" id="header">
-      <nav>
+    <nav>
+      <div id="nav-toggle">
+        <i id="nav-button" class="fas fa-caret-down"></i>
+        <span>Links</span>
+      </div>
+
+      <div class="nav__content nav__mobileCollapse" id="nav-content">
         <a
           class="nav__item"
           target="_blank"
@@ -48,156 +53,154 @@
           href="https://drive.google.com/file/d/1X3i_M-eDn0RRuU4KczMj13uZswMuwuz0/view?usp=sharing"
           >Resume</a
         >
-      </nav>
+      </div>
+    </nav>
 
-      <div class="header__content">
+    <div class="container">
+      <header class="header" id="header">
         <div class="header__img-container">
           <img
             class="header__img"
             src="img/bw-ryanjpeterson.jpg"
             alt="Ryan Peterson"
           />
+          <div class="circle circle-top"></div>
+          <div class="circle circle-bottom"></div>
         </div>
 
-        <div class="header__info">
-          <h1>Ryan Peterson</h1>
-          <span class="italic role">JavaScript Developer</span>
+        <div class="header__content">
+          <div class="header__info">
+            <h1 class="header__title">Ryan Peterson</h1>
+            <span class="italic role">JavaScript Developer</span>
 
-          <div class="fw-bold header__location">
-            <i class="fas fa-location-arrow"></i>
-            <span>Ottawa, ON</span>
+            <div class="fw-bold header__location">
+              <i class="fas fa-location-arrow"></i>
+              <span>Ottawa, ON</span>
+            </div>
+
+            <div class="header__greeting">
+              <p>Say hi and let's talk code, coffee or music!</p>
+
+              <p class="font-code">
+                const <span class="fw-bold">email</span> =
+                <a href="mailto:ryanjay333gmail.com" class="code-accent fw-bold"
+                  >'ryanjay333@gmail.com'</a
+                >;
+              </p>
+            </div>
           </div>
+        </div>
+      </header>
 
-          <div class="header__greeting">
-            <p>Say hi and let's talk code, coffee or music!</p>
+      <section class="about" id="about">
+        <div class="section__content">
+          <h2><span class="underline">About Me</span></h2>
 
-            <p class="font-code">
-              const email =
-              <span class="code-accent">'ryanjay333@gmail.com'</span>;
+          <p>
+            <span class="fw-bold"
+              >I'm a JavaScript developer who ended up in the programming world
+              via marketing.</span
+            >
+            I'm all about creating full stack applications that do something
+            cool. I'm looking to join a team where I can flex my skills and
+            absorb all the knowledge of the people around me.
+          </p>
+          <p>
+            I use <span class="fw-bold">React</span>,
+            <span class="fw-bold">Node.js</span>,
+            <span class="fw-bold">MongoDB</span>,
+            <span class="fw-bold">Firebase</span> and
+            <span class="fw-bold">AWS</span> to create my projects, and I'm
+            always interested in learning how to use new tools and languages to
+            improve my work.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="section__content">
+          <h2><span class="underline">Projects</span></h2>
+
+          <div class="grid-container" id="projects-container"></div>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="section__content">
+          <h2><span class="underline">Experience and Education</span></h2>
+
+          <div class="experience__item">
+            <h3>Marcone Supply</h3>
+            <h4>Marketing Manager - Vaughan, ON</h4>
+            <span class="italic">May 2015 - Present</span>
+
+            <p>
+              Management and execution of Canada-wide marketing initiatives,
+              including:
             </p>
+            <ul>
+              <li>
+                Creation, distribution & management of digital marketing
+                materials: Monthly wholesale flyers, references guides, email
+                marketing blasts & distribution lists
+              </li>
+              <li>
+                Venue planning, digital promotion of cross-country ‘Marcone
+                Servicers Association’, product training tour directed at a
+                wholesale audience. Avg. 25 classes/year, 500 attendees.
+                In-person sessions transitioned to monthly webinars as of March
+                2020
+              </li>
+              <li>
+                Management and content curation for MSAWorld.com, an online
+                resource for appliance service technicians featuring product
+                resources, OEM service bulletins and training webinars
+              </li>
+              <li>
+                Collaborative planning of promotions with multi-million dollar
+                vendors such as Whirlpool, Electrolux, Bosch, GE & Supco
+              </li>
+              <li>Main distributor of internal communications and documents</li>
+            </ul>
+
+            <div class="fw-bold italic">
+              Based in Ottawa, ON since April 2020
+            </div>
+          </div>
+
+          <div class="experience__item">
+            <a
+              class="btn experience__pdf"
+              href="https://drive.google.com/file/d/1X3i_M-eDn0RRuU4KczMj13uZswMuwuz0/view?usp=sharing"
+              >Open Resume</a
+            >
+          </div>
+
+          <div class="experience__item">
+            <h3>Georgian College</h3>
+            <h4>Marketing Diploma - Barrie, ON</h4>
+            <span class="italic">September 2013 - April 2015</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="about" id="about">
-      <div class="section__content">
-        <h2><span class="underline">About Me</span></h2>
-
-        <p>
-          <span class="fw-bold"
-            >I'm a JavaScript developer who ended up in the programming world
-            via marketing.</span
-          >
-          I'm all about creating full stack applications that do something cool.
-          I'm looking to join a team where I can flex my skills and absorb all
-          the knowledge of the people around me.
-        </p>
-        <p>
-          I use <span class="fw-bold">React</span>,
-          <span class="fw-bold">Node.js</span>,
-          <span class="fw-bold">MongoDB</span>,
-          <span class="fw-bold">Firebase</span> and
-          <span class="fw-bold">AWS</span> to create my projects, and I'm always
-          interested in learning how to use new tools and languages to improve
-          my work.
-        </p>
-
-        <div class="font-code">
+      <section class="recommendations" id="recommendations">
+        <div class="section__content">
+          <h2><span class="underline">Recommendations</span></h2>
           <p>
-            if (impressedByProjects) {
-            <br /><span class="indent"
-              >willEmail = <span class="code-accent">true</span>;</span
-            >
-            <br /><span class="indent"
-              >return
-              <span class="code-accent">'Get in touch with me'</span>;</span
-            >
-            <br />}
+            I'm a little obsessed with music. Since you've stuck around, here
+            are some albums you might like:
           </p>
+
+          <div class="grid-container" id="recommendations-grid"></div>
         </div>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <div class="section__content">
-        <h2><span class="underline">Projects</span></h2>
-
-        <div class="grid-container" id="projects-grid"></div>
-      </div>
-    </section>
-
-    <section class="experience" id="experience">
-      <div class="section__content">
-        <h2><span class="underline">Experience and Education</span></h2>
-
-        <a
-          class="experience__pdf-link"
-          href="https://drive.google.com/file/d/1X3i_M-eDn0RRuU4KczMj13uZswMuwuz0/view?usp=sharing"
-          >Open PDF version</a
-        >
-
-        <div class="experience__item">
-          <h3>Marcone Supply</h3>
-          <h4>Marketing Manager - Vaughan, ON</h4>
-          <span class="italic">May 2015 - Present</span>
-
-          <p>
-            Management and execution of Canada-wide marketing initiatives,
-            including:
-          </p>
-          <ul>
-            <li>
-              Creation, distribution & management of digital marketing
-              materials: Monthly wholesale flyers, references guides, email
-              marketing blasts & distribution lists
-            </li>
-            <li>
-              Venue planning, digital promotion of cross-country ‘Marcone
-              Servicers Association’, product training tour directed at a
-              wholesale audience. Avg. 25 classes/year, 500 attendees. In-person
-              sessions transitioned to monthly webinars as of March 2020
-            </li>
-            <li>
-              Management and content curation for MSAWorld.com, an online
-              resource for appliance service technicians featuring product
-              resources, OEM service bulletins and training webinars
-            </li>
-            <li>
-              Collaborative planning of promotions with multi-million dollar
-              vendors such as Whirlpool, Electrolux, Bosch, GE & Supco
-            </li>
-            <li>Main distributor of internal communications and documents</li>
-          </ul>
-
-          <span class="fw-bold italic"
-            >Based in Ottawa, ON since April 2020</span
-          >
-        </div>
-
-        <div class="experience__item">
-          <h3>Georgian College</h3>
-          <h4>Marketing Diploma - Barrie, ON</h4>
-          <span class="italic">September 2013 - April 2015</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="recommendations" id="recommendations">
-      <div class="section__content">
-        <h2><span class="underline">Recommendations</span></h2>
-        <p>
-          I'm a little obsessed with music. Since you've stuck around, here are
-          some albums you might like:
-        </p>
-
-        <div class="grid-container" id="recommendations-grid"></div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <footer>&copy; <span id="currentYear"></span></footer>
   </body>
 
+  <script src="js/navbar.js"></script>
   <script src="js/renderContent.js"></script>
 
   <script>

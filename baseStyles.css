@@ -1,25 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,800;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap');
 
 :root {
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 2rem;
-  --space-lg: 4rem;
-  --space-xl: 6rem;
+  --space-xs: 12px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 64px;
 
   --border-sm: 2.5px;
   --border-lg: 5px;
 
-  --colour-bg: #eee;
+  --colour-bg: #f7f7f7;
 
-  --colour-text: #181818;
-  --colour-text-hover: #18181895;
-  --colour-text-transparent: #18181820;
+  --colour-text-primary: #1b1717;
+  --colour-text-secondary: #f7f7f7;
+  --colour-text-accent: #aca06c;
+  --colour-text-description: #868d9c;
 
-  --colour-accent: #079299;
-  --colour-accent-hover: #07929995;
-  --colour-accent-transparent: #07929950;
+  --colour-primary: #293b5f;
+  --colour-primary-hover: #102246;
+
+  --colour-secondary: #47597e;
+  --colour-secondary-hover: #2e4065;
+
+  --box-shadow: rgb(0, 0, 0, 0.15) 1px 2px 10px;
+  --box-shadow-hover: rgb(0, 0, 0, 0.2) 1px 2px 10px;
 
   /* teal: 079299 */
   /* blue: 3d84b8 */
@@ -30,22 +35,17 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--colour-bg);
-  overflow-x: hidden;
-}
-
-html {
-  font-size: 20px;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
-  color: var(--colour-text);
+  background: var(--colour-bg);
+  color: var(--colour-text-primary);
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
 }
 
 section {
-  padding: var(--space-sm) var(--space-lg);
-  box-sizing: border-box;
+  margin-bottom: 80px;
 }
 
 h3,
@@ -58,55 +58,44 @@ a {
   color: inherit;
 }
 
-.section__content {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .fw-med {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .fw-bold {
-  font-weight: 800;
+  font-weight: 600;
+}
+
+p {
+  margin-top: 0;
 }
 
 .underline {
-  border-bottom: var(--border-lg) solid var(--colour-accent-transparent);
+  border-bottom: var(--border-lg) solid var(--colour-primary);
 }
 
 .italic {
   font-style: italic;
 }
 
-.role {
-  color: var(--colour-accent);
-}
-
 .font-code {
   font-family: 'Source Code Pro', monospace;
 }
 
-.fas,
-.fab {
-  color: var(--colour-accent);
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background: var(--colour-secondary);
+  color: var(--colour-text-secondary);
 }
 
-.fa-github,
-.fa-spotify,
-.fa-apple {
-  color: var(--colour-text);
-  font-size: var(--space-md);
-}
-
-.fa-github:hover,
-.fa-spotify:hover,
-.fa-apple:hover {
+.btn:hover {
   transform: translateY(-2px);
+  background: var(--colour-secondary-hover);
 }
 
-@media only screen and (max-width: 1000px) {
-  html {
-    font-size: 16px;
-  }
+.code-accent {
+  color: var(--colour-text-accent);
 }
