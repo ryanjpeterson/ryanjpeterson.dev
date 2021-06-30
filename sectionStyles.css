@@ -31,7 +31,6 @@ nav {
   justify-content: center;
   align-items: center;
   display: flex;
-  background: var(--colour-secondary);
 }
 
 .nav__mobileCollapse {
@@ -42,6 +41,8 @@ nav {
   padding: 1rem;
   display: flex;
   justify-content: center;
+  border-top: 1px solid var(--colour-secondary);
+  box-sizing: border-box;
 }
 
 .nav__item {
@@ -49,7 +50,7 @@ nav {
 }
 
 .nav__item:hover {
-  background: var(--colour-secondary-hover);
+  background: var(--colour-primary-hover);
 }
 
 /* Header */
@@ -101,7 +102,7 @@ header {
 }
 
 .circle-bottom {
-  background: var(--colour-secondary);
+  background: var(--colour-accent);
   transform: translate(10px, 15px);
 }
 
@@ -252,12 +253,9 @@ footer {
     display: flex;
   }
 
-  .nav__content {
-    background: var(--colour-primary);
-  }
-
   .nav__item {
     width: unset;
+    border: 0;
   }
 
   .header {
