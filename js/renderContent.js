@@ -7,6 +7,13 @@ const recommendationsContainer = document.querySelector(
 // Projects
 const projects = [
   {
+    name: 'MSA Webinars Portal',
+    description: 'Custom landing page for company B2B webinars',
+    githubURL: 'https://github.com/ryanjpeterson/marcone-msa-training-portal',
+    img: 'img/marcone-msa-webinars-portal-preview.png',
+    projectURL: 'https://ryanjpeterson.github.io/marcone-msa-training-portal/',
+  },
+  {
     name: 'Last30/Top30',
     description: 'Spotify playlist generator',
     githubURL: 'https://github.com/ryanjpeterson/last-30-top-30',
