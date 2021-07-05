@@ -11,7 +11,7 @@ const projects = [
     description: 'Custom landing page for company B2B webinars',
     githubURL: 'https://github.com/ryanjpeterson/marcone-msa-training-portal',
     img: 'img/marcone-msa-webinars-portal-preview.png',
-    projectURL: 'https://ryanjpeterson.github.io/marcone-msa-training-portal/',
+    projectURL: 'https://marcone-msa-training-portal.web.app/',
   },
   {
     name: 'Last30/Top30',
