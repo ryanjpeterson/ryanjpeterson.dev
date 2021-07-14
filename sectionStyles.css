@@ -132,10 +132,11 @@ header {
 }
 
 .grid-item__img {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-radius: 5px 5px 0 0;
+  margin-bottom: 0;
 }
 
 .grid-item__info {
@@ -211,6 +212,12 @@ header {
 
 .streaming-link__icon:hover {
   color: var(--colour-primary-hover);
+}
+
+.recommendations__spotify {
+  margin-top: 24px;
+  border-radius: var(--border-lg);
+  animation: fadeFromBottom 0.7s ease-in-out;
 }
 
 /* Footer */
