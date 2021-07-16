@@ -132,9 +132,9 @@ header {
 }
 
 .grid-item__img {
-  /* height: 100%; */
+  height: 100%;
   width: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
   border-radius: 5px 5px 0 0;
   margin-bottom: 0;
 }
@@ -142,8 +142,8 @@ header {
 .grid-item__info {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-evenly;
-  padding: 1rem;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
   flex: 1;
   box-sizing: border-box;
 }
