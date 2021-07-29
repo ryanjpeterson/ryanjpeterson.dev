@@ -19,19 +19,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Peterson || Web Developer</title>
-    <link rel="stylesheet" href="baseStyles.css" />
-    <link rel="stylesheet" href="sectionStyles.css" />
-    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animations.css" />
     <script
       src="https://kit.fontawesome.com/a3d1bf38d9.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <div id="nav-toggle">
         <i id="nav-button" class="fas fa-caret-down"></i>
-        <span>Links</span>
+        <span class="nav-text">ryanjpeterson.dev</span>
       </div>
 
       <div class="nav__content nav__mobileCollapse" id="nav-content">
@@ -39,25 +38,25 @@
           class="nav__item"
           target="_blank"
           href="https://www.linkedin.com/in/ryan-peterson-27108896/"
-          >LinkedIn</a
+          ><span class="nav-text">LinkedIn</span></a
         >
         <a
           class="nav__item"
           target="_blank"
           href="https://github.com/ryanjpeterson"
-          >GitHub</a
+          ><span class="nav-text">GitHub</span></a
         >
         <a
           class="nav__item"
           target="_blank"
           href="https://drive.google.com/file/d/1X3i_M-eDn0RRuU4KczMj13uZswMuwuz0/view?usp=sharing"
-          >Resume</a
+          ><span class="nav-text">Resume</span></a
         >
       </div>
     </nav>
 
-    <div class="container">
-      <header class="header" id="header">
+    <header class="header" id="header">
+      <div class="header__content">
         <div class="header__img-container">
           <img
             class="header__img"
@@ -68,36 +67,38 @@
           <div class="circle circle-bottom"></div>
         </div>
 
-        <div class="header__content">
+        <div class="header__text">
+          <h1 class="header__title">Ryan Peterson</h1>
+
           <div class="header__info">
-            <h1 class="header__title">Ryan Peterson</h1>
-            <span class="italic role">JavaScript Developer</span>
-
-            <div class="fw-bold header__location">
-              <i class="fas fa-location-arrow"></i>
-              <span>Ottawa, ON</span>
-            </div>
-
-            <div class="header__greeting">
-              <p>Say hi and let's talk code, coffee or music!</p>
-
-              <p class="font-code">
-                const <span class="fw-bold">email</span> =
-                <a href="mailto:ryanjay333gmail.com" class="code-accent fw-bold"
-                  >'ryanjay333@gmail.com'</a
-                >;
-              </p>
-            </div>
+            <p>
+              I'm a JavaScript developer located in
+              <span class="fw-bold">Ottawa, ON</span>. I code to solve problems
+              and make things that are just plain fun.
+            </p>
+            <p>
+              Hit me up and let's talk <span class="fw-bold">music</span>,
+              <span class="fw-bold">coffee</span> or
+              <span class="fw-bold">code!</span>
+            </p>
+            <a
+              href="mailto:ryanjay333gmail.com"
+              class="btn fw-med header__email"
+              >Reach me at: ryanjay333@gmail.com</a
+            >
           </div>
         </div>
-      </header>
+      </div>
+      <div class="header__bg"></div>
+    </header>
 
+    <div class="container">
       <section class="about" id="about">
         <div class="section__content">
           <h2><span class="underline">About Me</span></h2>
 
           <p>
-            <span class="fw-bold"
+            <span
               >I'm a JavaScript developer who ended up in the programming world
               via marketing.</span
             >
@@ -172,6 +173,7 @@
             <a
               class="btn experience__pdf"
               href="https://drive.google.com/file/d/1X3i_M-eDn0RRuU4KczMj13uZswMuwuz0/view?usp=sharing"
+              target="_blank"
               >Open Resume</a
             >
           </div>
@@ -208,7 +210,19 @@
       </section>
     </div>
 
-    <footer>&copy; <span id="currentYear"></span></footer>
+    <footer>
+      <span>
+        &copy;
+        <span id="currentYear"></span>
+      </span>
+      <span>
+        Image courtesy of
+        <a class="fw-bold" href="https://unsplash.com/@whereveriwander">
+          @whereveriwander</a
+        >
+        on Unsplash.
+      </span>
+    </footer>
   </body>
 
   <script src="js/navbar.js"></script>
@@ -217,6 +231,6 @@
   <script>
     // Set year in footer
     const year = document.querySelector('#currentYear');
-    year.textContent = new Date().getFullYear() + ' Ryan Peterson';
+    year.textContent = new Date().getFullYear() + ' Ryan Peterson. ';
   </script>
 </html>
