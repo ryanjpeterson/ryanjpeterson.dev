@@ -9,9 +9,8 @@ const projects = [
   {
     name: 'MSA Webinars Portal',
     description: 'Custom landing page for company B2B webinars',
-    githubURL:
-      'https://firebasestorage.googleapis.com/v0/b/ryanjpeterson-portfolio-bf27f.appspot.com/o/marcone-msa-webinars-portal-preview.png?alt=media&token=3e1edf41-f708-4243-86ef-70762159a4f5',
-    img: 'img/marcone-msa-webinars-portal-preview.png',
+    githubURL: 'https://github.com/ryanjpeterson/marcone-msa-training-portal',
+    img: 'https://firebasestorage.googleapis.com/v0/b/ryanjpeterson-portfolio-bf27f.appspot.com/o/marcone-msa-webinars-portal-preview.png?alt=media&token=3e1edf41-f708-4243-86ef-70762159a4f5',
     projectURL: 'https://marcone-msa-training-portal.web.app/',
   },
   {
