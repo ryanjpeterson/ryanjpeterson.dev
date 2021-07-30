@@ -18,15 +18,16 @@
   --colour-text-description: #868d9c;
 
   --colour-primary: #3abaae;
-  --colour-primary-transparent: rgba(58, 186, 174, 0.8);
+  --colour-primary-transparent: rgba(58, 186, 174, 0.65);
   --colour-primary-lighter: #47c6bb;
 
   --colour-secondary: #00152e;
-  --colour-secondary-transparent: rgba(0, 21, 46, 0.8);
+  --colour-secondary-transparent: rgba(0, 21, 46, 0.65);
   --colour-secondary-lighter: #002148;
 
-  --box-shadow: rgb(0, 0, 0, 0.2) 1px 2px 10px;
-  --box-shadow-lighter: rgb(0, 0, 0, 0.05) 1px 2px 10px;
+  --box-shadow: rgb(0, 0, 0, 0.25) 2.5px 2.5px 10px;
+  --box-shadow-lighter: rgb(0, 0, 0, 0.1) 2.5px 2.5px 10px;
+  --primary-glow-border: 0 0 20px 5px var(--colour-primary-transparent);
 }
 
 html,
@@ -211,6 +212,7 @@ p {
 .header__img {
   border-radius: 50%;
   height: 250px;
+  box-shadow: var(--primary-glow-border);
 }
 
 .header__info {
@@ -238,6 +240,7 @@ p {
   background: var(--colour-secondary-lighter);
   border: 0;
   transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
 }
 
 /* Container */
@@ -270,7 +273,7 @@ p {
   grid-column: span 12 / auto;
   border-radius: 5px;
   background: #fff;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-lighter);
   animation: fadeFromBottom 0.7s ease-in-out;
 }
 
@@ -317,7 +320,7 @@ p {
 
 .grid-item:hover {
   transform: translateY(-2px);
-  box-shadow: var(--box-shadow-lighter);
+  box-shadow: var(--box-shadow);
 }
 
 /* Experience */
@@ -333,6 +336,7 @@ p {
 
 .experience__pdf:hover {
   background: var(--colour-secondary-lighter);
+  box-shadow: var(--box-shadow);
 }
 
 /* Recommendations */
