@@ -9,7 +9,8 @@ const projects = [
   {
     name: 'MSA Webinars Portal',
     description: 'Custom landing page for company B2B webinars',
-    githubURL: 'https://github.com/ryanjpeterson/marcone-msa-training-portal',
+    githubURL:
+      'https://firebasestorage.googleapis.com/v0/b/ryanjpeterson-portfolio-bf27f.appspot.com/o/marcone-msa-webinars-portal-preview.png?alt=media&token=3e1edf41-f708-4243-86ef-70762159a4f5',
     img: 'img/marcone-msa-webinars-portal-preview.png',
     projectURL: 'https://marcone-msa-training-portal.web.app/',
   },
@@ -17,28 +18,28 @@ const projects = [
     name: 'Last30/Top30',
     description: 'Spotify playlist generator',
     githubURL: 'https://github.com/ryanjpeterson/last-30-top-30',
-    img: 'img/last-30-top-30-preview.png',
+    img: 'https://firebasestorage.googleapis.com/v0/b/ryanjpeterson-portfolio-bf27f.appspot.com/o/last-30-top-30-preview.png?alt=media&token=0e44e87a-19f4-446f-a79c-5e5d8c57c180',
     projectURL: 'https://last-30-top-30.herokuapp.com/',
   },
   {
     name: 'Tweetstream',
     description: 'Twitter streaming api',
     githubURL: 'https://github.com/ryanjpeterson/tweetstream',
-    img: 'img/tweetstream-preview.png',
+    img: 'https://firebasestorage.googleapis.com/v0/b/ryanjpeterson-portfolio-bf27f.appspot.com/o/tweetstream-preview.png?alt=media&token=5e7808da-dc52-46a0-82e7-f2df11f6b8f7',
     projectURL: 'https://rjp-tweetstream.herokuapp.com/',
   },
   {
     name: 'You vs the World',
     description: 'Artist portfolio',
     githubURL: 'https://github.com/ryanjpeterson/you-vs-the-wrld-client',
-    img: 'img/you-vs-the-wrld-preview.png',
+    img: 'https://firebasestorage.googleapis.com/v0/b/ryanjpeterson-portfolio-bf27f.appspot.com/o/you-vs-the-wrld-preview.png?alt=media&token=b6706235-402c-4900-992a-305b6c8d5d89',
     projectURL: 'https://you-vs-the-wrld.web.app/',
   },
   {
     name: 'Twitter Fav Bot',
     description: 'CLI Python Twitter fav bot',
     githubURL: 'https://github.com/ryanjpeterson/miscellaneous-billy-corgan',
-    img: 'img/twitter-fav-bot-preview.png',
+    img: 'https://firebasestorage.googleapis.com/v0/b/ryanjpeterson-portfolio-bf27f.appspot.com/o/twitter-fav-bot-preview.png?alt=media&token=75abe6c9-d39a-405e-aa73-bd9bad841832',
     projectURL: 'https://github.com/ryanjpeterson/miscellaneous-billy-corgan',
   },
 ];
@@ -50,7 +51,7 @@ const generateProjectItem = (project) => `
     href="${project.projectURL}"
     target="_blank"
   >
-    <img class="grid-item__img" src="./${project.img}" alt="${project.name}" />
+    <img class="grid-item__img" src="${project.img}" alt="${project.name}" />
   </a>
 
   <div class="grid-item__info">
