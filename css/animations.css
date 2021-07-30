@@ -61,6 +61,15 @@
   }
 }
 
+@keyframes scaleIn {
+  from {
+    transform: scale(1.15);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .hover-link:hover {
   /* transform: translateY(-1px);*/
   transform: scale(1.025);
