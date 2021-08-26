@@ -107,7 +107,7 @@ p {
 
 /* Navbar */
 .nav {
-  background: var(--colour-primary);
+  background: var(--colour-secondary);
   color: var(--colour-text-light);
   display: flex;
   flex-flow: column nowrap;
@@ -182,7 +182,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  background: url('https://images.unsplash.com/photo-1611773654770-dc75903b36df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80')
+  background: url('https://images.unsplash.com/photo-1547499417-61a435d27cb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80')
     var(--colour-secondary);
   background-size: cover;
   background-position: center;
