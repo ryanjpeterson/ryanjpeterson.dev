@@ -1,31 +1,21 @@
-const navButton = document.querySelector('#nav-button');
-const navContent = document.querySelector('#nav-content');
-const navToggle = document.querySelector('#nav-toggle');
+const navbar = document.querySelector('#navbar');
+const navbarContent = document.querySelector('#navbarContent');
+const navbarToggle = document.querySelector('#navbarToggle');
+const aboutSection = document.querySelector('#about');
 
-let navCollapsed = true;
+const toggleMenu = () => {
+  navbarToggle.classList.toggle('active');
+  navbarContent.classList.toggle('active');
+};
 
-function toggleMobileView() {
-  if (window.innerWidth <= 700) {
-    navCollapsed = true;
-    console.log('mobile');
+const navbarSticky = () => {
+  if (window.pageYOffset >= aboutSection.offsetTop) {
+    navbar.classList.add('sticky');
+    navbarContent.classList.remove('active');
   } else {
-    console.log('desktop');
+    navbar.classList.remove('sticky');
   }
-}
+};
 
-function toggleNavIcon() {
-  if (navButton.classList.contains('fa-caret-down')) {
-    navButton.classList.remove('fa-caret-down');
-    navButton.classList.add('fa-caret-up');
-  } else {
-    navButton.classList.add('fa-caret-down');
-    navButton.classList.remove('fa-caret-up');
-  }
-}
-
-function toggleMenu() {
-  navContent.classList.toggle('nav__mobileCollapse');
-  toggleNavIcon();
-}
-
-navToggle.addEventListener('click', toggleMenu);
+navbarToggle.addEventListener('click', toggleMenu);
+window.addEventListener('scroll', navbarSticky);
